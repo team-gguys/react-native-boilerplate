@@ -38,6 +38,7 @@
     "screens": "./src/screens",
     "i18n": "./src/i18n",
     "services": "./src/services",
+    "components": "./src/components",
     "sota-immutable": "^4.0.0-rc.12",
     "store": "./src/store",
     "utils": "./src/utils"

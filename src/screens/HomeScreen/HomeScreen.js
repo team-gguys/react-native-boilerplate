@@ -6,6 +6,7 @@ import { withTranslation } from 'react-i18next';
 
 import styles from './HomeScreen.styles';
 
+import SampleComp from 'components/SampleComp';
 import { navigate } from 'services/navigationService';
 
 
@@ -24,6 +25,8 @@ export class HomeScreen extends PureComponent {
 
         return (
             <View style={styles.container}>
+                <SampleComp />
+                
                 <Text style={styles.text}>{t('LoginScreen.email_or_phone_number')}</Text>
 
                 <TouchableOpacity style={styles.button} onPress={this.onChangeLangButtonPressed}>

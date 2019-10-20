@@ -13,12 +13,4 @@ export default EStyleSheet.create({
         fontWeight: 'bold',
         color: 'black',
     },
-
-    button: {
-        marginTop: '20rem',
-        backgroundColor: 'green',
-        paddingHorizontal: '40rem',
-        paddingVertical: '10rem',
-        borderRadius: '5rem',
-    },
 });

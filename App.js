@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
+import EStyleSheet from 'react-native-extended-stylesheet';
 
-import HomeScreen from 'screens/HomeScreen/HomeScreen';
+import Routes from './src/Routes';
+import { setTopLevelNavigator } from 'services/navigationService';
 import store from 'store';
 
+EStyleSheet.build({
+    $rem: 1,
+});
+
 class App extends Component {
+
+    onRoutesRef = (navigatorRef) => {
+        setTopLevelNavigator(navigatorRef);
+    }
+
     render() {
         return (
             <Provider store={store}>
-                <HomeScreen />
+                <Routes ref={this.onRoutesRef} />
             </Provider>
         );
     }

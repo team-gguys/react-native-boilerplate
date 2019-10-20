@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "npm install -g generator-ggs-rn",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
+    "create:component": "cd src/components && yo ggs-rn:component",
+    "create:screen": "cd src/screens && yo ggs-rn:screen",
+    "create:store": "cd src/store && yo ggs-rn:store",
     "test": "jest",
     "lint": "eslint ."
   },

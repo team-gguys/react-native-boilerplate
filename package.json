@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "npm install -g generator-gguys-rn",
+    "postinstall": "npm install -g yo generator-gguys-rn",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
